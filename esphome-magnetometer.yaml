@@ -93,9 +93,10 @@ esphome:
   on_boot:
     then:
       - lambda: App.set_loop_interval(0);
-      - globals.set:
-          id: ${prefix_id}half_rotations_total
-          value: '0'
+      # Thias ist just for RESET Total Flow WITHOUT seoerate Offset
+      #- globals.set:
+      #    id: ${prefix_id}half_rotations_total
+       #   value: '0'
 logger:
   level: INFO
   logs:
