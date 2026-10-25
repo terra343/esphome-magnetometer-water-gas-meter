@@ -207,6 +207,22 @@ number:
     optimistic: true
     unit_of_measurement: ${volume_unit}
     icon: mdi:rotate-360
+    
+    # Mein Versuch den Offset eingebbar zu gestalten
+- platform: template
+    id: ${prefix_id}volume_offset
+    name: ${prefix_name}Volume Offset Berko
+    entity_category: config
+    mode: box
+    min_value: 0
+    max_value: 9999999
+    step: 0.000000001
+    initial_value: 8888
+    update_interval: never
+    restore_value: true
+    optimistic: true
+    unit_of_measurement: ${volume_unit}
+    icon: mdi:rotate-360
 
   - platform: template
     id: ${prefix_id}temperature_offset
