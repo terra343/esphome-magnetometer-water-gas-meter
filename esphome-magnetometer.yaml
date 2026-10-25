@@ -131,7 +131,7 @@ globals:
   - id: ${prefix_id}volume_offset
     type: float
     restore_value: true
-    initial_value: '8927'
+    initial_value: '8928.473'
   - id: ${prefix_id}half_rotations_flow
     type: long
     restore_value: false
