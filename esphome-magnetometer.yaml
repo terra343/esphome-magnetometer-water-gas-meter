@@ -208,8 +208,7 @@ number:
     unit_of_measurement: ${volume_unit}
     icon: mdi:rotate-360
     
-    # Mein Versuch den Offset eingebbar zu gestalten
-- platform: template
+  - platform: template
     id: ${prefix_id}volume_offset
     name: ${prefix_name}Volume Offset Berko
     entity_category: config
