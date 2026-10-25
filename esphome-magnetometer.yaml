@@ -33,7 +33,8 @@ substitutions:
   # 3/4" Badger Recordall 35 RCDL: 2/126.671 pulses per gallon. This is only the author's
   # meter; the value varies by make, model and size, so look yours up or measure it. See the
   # README section on volume per half rotation.
-  volume_per_half_rotation_initial_value: '0.01578893'
+  # volume_per_half_rotation_initial_value: '0.005' für German GAS meter BK-G 1 imp per 0,01 m3
+  volume_per_half_rotation_initial_value: '0.005'
   calibration_minimal_axis_range_initial_value: '20'
   # How often Flow is recomputed and published. Under flow_algorithm 'interval' this
   # is only the publish cadence; under 'window' it is also the averaging window, and
@@ -128,7 +129,7 @@ globals:
   - id: ${prefix_id}volume_offset
     type: float
     restore_value: true
-    initial_value: '0'
+    initial_value: '8926'
   - id: ${prefix_id}half_rotations_flow
     type: long
     restore_value: false
