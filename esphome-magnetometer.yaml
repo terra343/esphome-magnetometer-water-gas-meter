@@ -124,7 +124,7 @@ api:
 globals:
   - id: ${prefix_id}half_rotations_total
     type: long
-    restore_value: false
+    restore_value: true
     initial_value: '0'
   - id: ${prefix_id}volume_offset
     type: float
